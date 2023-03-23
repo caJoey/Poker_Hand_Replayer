@@ -3,6 +3,7 @@
     height: 100%;
     overflow: hidden
   }
+
   body{
     background-color: gray;
   }
@@ -22,6 +23,7 @@
     right: 25%;
 
   }
+
   .btn2{
     position: fixed;
     text-align: right;
@@ -50,20 +52,47 @@
     display: none;
   }
 
-  #card00{
-    /* display: none; */
+  #flop0{
+    display: none;
     height: 15%;
     width: 5.5%;
     position: fixed;
-    top: 3%;
-    left: 25.5%;
+    top: 35%;
+    left: 33%;
   }
-  #card01{
-    /* display: none; */
+
+  #flop1{
+    display: none;
     height: 15%;
     width: 5.5%;
     position: fixed;
-    top: 3%;
-    left: 31.2%;
+    top: 35%;
+    left: 39%;
   }
-          
+
+  #flop2{
+    display: none;
+    height: 15%;
+    width: 5.5%;
+    position: fixed;
+    top: 35%;
+    left: 45%;
+  }
+
+  #turn{
+    display: none;
+    height: 15%;
+    width: 5.5%;
+    position: fixed;
+    top: 35%;
+    left: 51%;
+  }
+
+  #river{
+    display: none;
+    height: 15%;
+    width: 5.5%;
+    position: fixed;
+    top: 35%;
+    left: 57%;
+  }
