@@ -19,7 +19,7 @@
   .btn1{
     position: fixed;
     text-align: right;
-    bottom: 5%;
+    bottom: 8%;
     right: 25%;
 
   }
@@ -27,7 +27,7 @@
   .btn2{
     position: fixed;
     text-align: right;
-    bottom: 5%;
+    bottom: 8%;
     right: 10%;
   }
 
@@ -95,4 +95,43 @@
     position: fixed;
     top: 35%;
     left: 57%;
+  }
+
+  #pot{
+    display: none;
+    font-size: 150%;
+    color: white;
+    position: fixed;
+    top: -1%;
+    left: 1%;
+  }
+
+  #rake{
+    display: block;
+    font-size: 150%;
+    color: white;
+    position: fixed;
+    top: 6%;
+    left: 1%;
+  }
+
+  #keys{
+    margin-top: 8%;
+    margin-left: 1%;
+  }
+
+  #keys p{
+    font-size: 150%;
+  }
+
+  #key0{
+    color: lightgreen;
+  }
+  
+  #key1{
+    color: lightsalmon;
+  }
+
+  #key2{
+    color: lightcoral;
   }
