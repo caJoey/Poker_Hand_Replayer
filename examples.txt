@@ -1,49 +1,49 @@
 SwCPoker Hand #168960105:  Hold'em No Limit (10/20) - 2023/03/07 0:19:53 UTC
 Table 'Jackpot (10/20) #1'(168758308) 9-max (Real Money) Seat #3 is the button
-Seat 1: DogeDigital (2,104.32 in chips)
-Seat 2: CrackeDeuces (2,300.21 in chips)
-Seat 3: jimatunde (2,078 in chips)
-Seat 4: noSugardaddy (2,980.56 in chips)
-Seat 5: Rexxx (1,980 in chips)
-Seat 6: MiniBoss (1,139.69 in chips)
-Seat 7: kefka777 (546.80 in chips)
-Seat 9: NoRiverNoCry (2,067.50 in chips)
-noSugardaddy: posts small blind 10
-Rexxx: posts big blind 20
+Seat 1: 7qsfNG (2,104.32 in chips)
+Seat 2: 1plFzV (2,300.21 in chips)
+Seat 3: Hero (2,078 in chips)
+Seat 4: BGtinD (2,980.56 in chips)
+Seat 5: uVKAOL (1,980 in chips)
+Seat 6: qQ9amy (1,139.69 in chips)
+Seat 7: qWGNXJ (546.80 in chips)
+Seat 9: HBMTPi (2,067.50 in chips)
+BGtinD: posts small blind 10
+uVKAOL: posts big blind 20
 *** HOLE CARDS ***
-Dealt to jimatunde [8h 7h]
-MiniBoss: folds
-kefka777: folds
-NoRiverNoCry: folds
-DogeDigital: raises 50 to 50
-CrackeDeuces: folds
-jimatunde: calls 50
-noSugardaddy: calls 40
-Rexxx: calls 30
+Dealt to Hero [8h 7h]
+qQ9amy: folds
+qWGNXJ: folds
+HBMTPi: folds
+7qsfNG: raises 50 to 50
+1plFzV: folds
+Hero: calls 50
+BGtinD: calls 40
+uVKAOL: calls 30
 *** FLOP *** [6s Th Td]
-noSugardaddy: bets 192
-Rexxx: folds
-DogeDigital: calls 192
-jimatunde: folds
+BGtinD: bets 192
+uVKAOL: folds
+7qsfNG: calls 192
+Hero: folds
 *** TURN *** [6s Th Td] [Qc]
-noSugardaddy: checks
-DogeDigital: bets 280.32
-noSugardaddy: folds
-Uncalled bet (280.32) returned to DogeDigital
+BGtinD: checks
+7qsfNG: bets 280.32
+BGtinD: folds
+Uncalled bet (280.32) returned to 7qsfNG
 *** SHOW DOWN ***
-DogeDigital: doesn't show hand
-DogeDigital collected 560.64 from pot
+7qsfNG: doesn't show hand
+7qsfNG collected 560.64 from pot
 *** SUMMARY ***
 Total pot 560.64 | Rake 23.36 
 Board [6s Th Td Qc]
-Seat 1: DogeDigital collected (560.64)
-Seat 2: CrackeDeuces folded before Flop (didn't bet)
-Seat 3: jimatunde (button) folded on the Flop 
-Seat 4: noSugardaddy (small blind) folded on the Turn 
-Seat 5: Rexxx (big blind) folded on the Flop 
-Seat 6: MiniBoss folded before Flop (didn't bet)
-Seat 7: kefka777 folded before Flop (didn't bet)
-Seat 9: NoRiverNoCry folded before Flop (didn't bet)
+Seat 1: 7qsfNG collected (560.64)
+Seat 2: 1plFzV folded before Flop (didn't bet)
+Seat 3: Hero (button) folded on the Flop 
+Seat 4: BGtinD (small blind) folded on the Turn 
+Seat 5: uVKAOL (big blind) folded on the Flop 
+Seat 6: qQ9amy folded before Flop (didn't bet)
+Seat 7: qWGNXJ folded before Flop (didn't bet)
+Seat 9: HBMTPi folded before Flop (didn't bet)
 
 
 
@@ -51,40 +51,272 @@ Seat 9: NoRiverNoCry folded before Flop (didn't bet)
 
 PokerStars Hand #174088855475:  Hold'em No Limit (50/100) - 2017/08/08 23:16:30 MSK [2017/08/08 16:16:30 ET]
 Table 'Euphemia II' 6-max (Play Money) Seat #3 is the button
-Seat 1: adevlupec (53368 in chips) 
-Seat 2: Dette32 (10845 in chips) 
-Seat 3: Drug08 (9686 in chips) 
-Seat 4: FluffyStutt (11326 in chips) 
-FluffyStutt: posts small blind 50
-adevlupec: posts big blind 100
+Seat 1: hgNIYA (53368 in chips) 
+Seat 2: 0zMU7z (10845 in chips) 
+Seat 3: L6Qydk (9686 in chips) 
+Seat 4: Hero (11326 in chips) 
+Hero: posts small blind 50
+hgNIYA: posts big blind 100
 *** HOLE CARDS ***
-Dealt to FluffyStutt [2h Ks]
-FluffyStutt said, "nh"
-Dette32: calls 100
-Drug08: calls 100
-FluffyStutt: folds 
-adevlupec: checks 
+Dealt to Hero [2h Ks]
+0zMU7z: calls 100
+L6Qydk: calls 100
+Hero: folds 
+hgNIYA: checks 
 *** FLOP *** [8h 7s 8d]
-adevlupec: checks 
-Dette32: checks 
-Drug08: checks 
+hgNIYA: checks 
+0zMU7z: checks 
+L6Qydk: checks 
 *** TURN *** [8h 7s 8d] [Th]
-adevlupec: checks 
-Dette32: checks 
-Drug08: checks 
+hgNIYA: checks 
+0zMU7z: checks 
+L6Qydk: checks 
 *** RIVER *** [8h 7s 8d Th] [2c]
-adevlupec: checks 
-Dette32: checks 
-Drug08: checks 
+hgNIYA: checks 
+0zMU7z: checks 
+L6Qydk: checks 
 *** SHOW DOWN ***
-adevlupec: shows [Qs Ts] (two pair, Tens and Eights)
-Dette32: mucks hand 
-Drug08: mucks hand 
-adevlupec collected 332 from pot
+hgNIYA: shows [Qs Ts] (two pair, Tens and Eights)
+0zMU7z: mucks hand 
+L6Qydk: mucks hand 
+hgNIYA collected 332 from pot
 *** SUMMARY ***
 Total pot 350 | Rake 18 
 Board [8h 7s 8d Th 2c]
-Seat 1: adevlupec (big blind) showed [Qs Ts] and won (332) with two pair, Tens and Eights
-Seat 2: Dette32 mucked [5s Kc]
-Seat 3: Drug08 (button) mucked [4d 6h]
-Seat 4: FluffyStutt (small blind) folded before Flop
+Seat 1: hgNIYA (big blind) showed [Qs Ts] and won (332) with two pair, Tens and Eights
+Seat 2: 0zMU7z mucked [5s Kc]
+Seat 3: L6Qydk (button) mucked [4d 6h]
+Seat 4: Hero (small blind) folded before Flop
+
+
+
+
+
+SwCPoker Hand #169104905: Tournament (Early Evening Deep NLH [40k GTD])#168989421, 188,000+12,000 Hold'em No Limit - Level VIII (125/250) - 2023/03/08 1:22:57 UTC
+Table '168989421 2'(169104200) 9-max Seat #8 is the button
+Seat 1: 2YaHHz (9,141 in chips)
+Seat 2: nilMaZ (7,415 in chips)
+Seat 3: VdJgx9 (15,430 in chips)
+Seat 4: 1ppG1w (4,323 in chips)
+Seat 5: j8WmED (14,573 in chips)
+Seat 6: Hero (6,242 in chips)
+Seat 7: CsM8OY (8,365 in chips)
+Seat 8: H98qmM (4,875 in chips)
+Seat 9: qGU7Al (16,131 in chips)
+2YaHHz: posts the ante 25
+nilMaZ: posts the ante 25
+VdJgx9: posts the ante 25
+1ppG1w: posts the ante 25
+j8WmED: posts the ante 25
+Hero: posts the ante 25
+CsM8OY: posts the ante 25
+H98qmM: posts the ante 25
+qGU7Al: posts the ante 25
+qGU7Al: posts small blind 125
+2YaHHz: posts big blind 250
+*** HOLE CARDS ***
+Dealt to Hero [4c 7h]
+nilMaZ: folds
+VdJgx9: folds
+1ppG1w: calls 250
+j8WmED: folds
+Hero: folds
+CsM8OY: folds
+H98qmM: raises 4,850 to 4,850 and is all-in
+qGU7Al: folds
+2YaHHz: raises 8,866 to 9,116 and is all-in
+1ppG1w: calls 4,048 and is all-in
+Uncalled bet (4,266) returned to 2YaHHz
+*** FLOP *** [Jc Kc 7s]
+*** TURN *** [Jc Kc 7s] [Jd]
+*** RIVER *** [Jc Kc 7s Jd] [2s]
+*** SHOW DOWN ***
+2YaHHz: shows [Js Jh] (four of a kind, Jacks)
+1ppG1w: shows [3c 3d] (two pair, Jacks and Threes)
+H98qmM: shows [8c 8s] (two pair, Jacks and Eights)
+2YaHHz collected 1,104 from side pot
+2YaHHz collected 13,244 from main pot
+*** SUMMARY ***
+Total pot 14,348 Main pot 13,244. Side pot 1,104. | Rake 0 
+Board [Jc Kc 7s Jd 2s]
+Seat 1: 2YaHHz (big blind) showed [Js Jh] and won (14,348) with four of a kind, Jacks
+Seat 2: nilMaZ folded before Flop 
+Seat 3: VdJgx9 folded before Flop 
+Seat 4: 1ppG1w showed [3c 3d] and lost with two pair, Jacks and Threes
+Seat 5: j8WmED folded before Flop 
+Seat 6: Hero folded before Flop 
+Seat 7: CsM8OY folded before Flop 
+Seat 8: H98qmM (button) showed [8c 8s] and lost with two pair, Jacks and Eights
+Seat 9: qGU7Al (small blind) folded before Flop
+
+
+
+
+
+PokerStars Hand #174088919486:  Hold'em No Limit (50/100) - 2017/08/08 23:17:57 MSK [2017/08/08 16:17:57 ET]
+Table 'Euphemia II' 6-max (Play Money) Seat #4 is the button
+Seat 1: SzJOMh (53600 in chips) 
+Seat 2: WjRQtL (10745 in chips) 
+Seat 3: pn1AIw (9586 in chips) 
+Seat 4: Hero (11276 in chips) 
+yanksea will be allowed to play after the button
+SzJOMh: posts small blind 50
+WjRQtL: posts big blind 100
+*** HOLE CARDS ***
+Dealt to Hero [8s Qc]
+pn1AIw: calls 100
+Hero: calls 100
+SzJOMh: folds 
+WjRQtL: checks 
+*** FLOP *** [8c Qh 4c]
+WjRQtL: checks 
+pn1AIw: checks 
+Hero: bets 332
+WjRQtL: folds 
+pn1AIw: calls 332
+*** TURN *** [8c Qh 4c] [Ac]
+pn1AIw: checks 
+Hero: bets 963
+pn1AIw: calls 963
+*** RIVER *** [8c Qh 4c Ac] [Td]
+pn1AIw: checks 
+Hero: bets 9881 and is all-in
+pn1AIw: folds 
+Uncalled bet (9881) returned to Hero
+Hero collected 2793 from pot
+Hero: doesn't show hand 
+*** SUMMARY ***
+Total pot 2940 | Rake 147 
+Board [8c Qh 4c Ac Td]
+Seat 1: SzJOMh (small blind) folded before Flop
+Seat 2: WjRQtL (big blind) folded on the Flop
+Seat 3: pn1AIw folded on the River
+Seat 4: Hero (button) collected (2793)
+
+
+
+
+
+SwCPoker Hand #168823807: Tournament (PKO Week Little BTC! [25k GTD])#166900148, 23,500+1,500 Hold'em No Limit - Level XXII (1,000/2,000) - 2023/03/06 0:09:10 UTC
+Table '166900148 1'(168813822) 8-max Seat #8 is the button
+Seat 2: XfbEVM (41,358 in chips)
+Seat 3: 7syERO (29,484 in chips)
+Seat 6: SMqqlD (24,693 in chips)
+Seat 7: mztYYZ (64,448 in chips)
+Seat 8: Hero (29,017 in chips)
+XfbEVM: posts the ante 200
+7syERO: posts the ante 200
+SMqqlD: posts the ante 200
+mztYYZ: posts the ante 200
+Hero: posts the ante 200
+XfbEVM: posts small blind 1,000
+7syERO: posts big blind 2,000
+*** HOLE CARDS ***
+Dealt to Hero [Kd As]
+SMqqlD: raises 4,000 to 4,000
+mztYYZ: folds
+Hero: raises 28,817 to 28,817 and is all-in
+XfbEVM: folds
+7syERO: folds
+SMqqlD: calls 20,493 and is all-in
+Uncalled bet (4,324) returned to Hero
+*** FLOP *** [8h 5c 3h]
+*** TURN *** [8h 5c 3h] [4d]
+*** RIVER *** [8h 5c 3h 4d] [7s]
+*** SHOW DOWN ***
+SMqqlD: shows [Ad Ks] (high card Ace)
+Hero: shows [Kd As] (high card Ace)
+SMqqlD collected 26,493 from pot
+Hero collected 26,493 from pot
+*** SUMMARY ***
+Total pot 52,986 | Rake 0 
+Board [8h 5c 3h 4d 7s]
+Seat 2: XfbEVM (small blind) folded before Flop 
+Seat 3: 7syERO (big blind) folded before Flop 
+Seat 6: SMqqlD showed [Ad Ks] and won (26,493) with high card Ace
+Seat 7: mztYYZ folded before Flop 
+Seat 8: Hero (button) showed [Kd As] and won (26,493) with high card Ace
+
+
+
+
+
+SwCPoker Hand #169122633:  Hold'em No Limit (10/20) - 2023/03/08 3:00:30 UTC
+Table 'Jackpot (10/20) (6max) #2'(168762704) 6-max (Real Money) Seat #1 is the button
+Seat 1: 8nUrCM (370 in chips)
+Seat 2: Hero (2,020 in chips)
+Seat 3: K3C3gr (400 in chips)
+Seat 4: QoRp6e (2,368.23 in chips)
+Seat 5: VTUace (2,538.03 in chips)
+Seat 6: iDiBYB (1,204.97 in chips)
+Hero: posts small blind 10
+K3C3gr: posts big blind 20
+*** HOLE CARDS ***
+Dealt to Hero [Th 9s]
+QoRp6e: folds
+VTUace: folds
+iDiBYB: folds
+8nUrCM has timed out
+8nUrCM: folds
+Hero: raises 50 to 60
+K3C3gr: folds
+Uncalled bet (40) returned to Hero
+*** SHOW DOWN ***
+Hero: doesn't show hand
+Hero collected 40 from pot
+*** SUMMARY ***
+Total pot 40 | Rake 0 
+Seat 2: Hero (small blind) collected (40)
+Seat 3: K3C3gr (big blind) folded before Flop 
+Seat 4: QoRp6e folded before Flop (didn't bet)
+Seat 5: VTUace folded before Flop (didn't bet)
+Seat 6: iDiBYB folded before Flop (didn't bet)
+
+
+
+
+
+SwCPoker Hand #168977648: Tournament (The Daily Deep [10k GTD])#168838583, 47,000+3,000 Hold'em No Limit - Level XVI (350/700) - 2023/03/07 2:51:13 UTC
+Table '168838583 1'(168967193) 8-max Seat #2 is the button
+Seat 1: OKQTI2 (5,821 in chips)
+Seat 2: Hero (17,275 in chips)
+Seat 3: 0w4N3X (16,978 in chips)
+Seat 6: mdGZJG (8,206 in chips)
+Seat 7: hlI2Ee (4,360 in chips)
+Seat 8: UeQtuN (14,906 in chips)
+OKQTI2: posts the ante 70
+Hero: posts the ante 70
+0w4N3X: posts the ante 70
+mdGZJG: posts the ante 70
+hlI2Ee: posts the ante 70
+UeQtuN: posts the ante 70
+0w4N3X: posts small blind 350
+mdGZJG: posts big blind 700
+*** HOLE CARDS ***
+Dealt to Hero [Ac 9c]
+hlI2Ee: raises 4,200 to 4,200
+UeQtuN: folds
+acemonth joins the table at seat #4
+_Angel_ joins the table at seat #5
+OKQTI2: folds
+Hero: raises 17,205 to 17,205 and is all-in
+0w4N3X: folds
+mdGZJG: folds
+hlI2Ee: calls 90 and is all-in
+Uncalled bet (12,915) returned to Hero
+*** FLOP *** [8d Ts 2c]
+*** TURN *** [8d Ts 2c] [Jc]
+*** RIVER *** [8d Ts 2c Jc] [4c]
+*** SHOW DOWN ***
+hlI2Ee: shows [5d 5c] (a pair of Fives)
+Hero: shows [Ac 9c] (a flush, Ace high)
+Hero collected 10,050 from pot
+*** SUMMARY ***
+Total pot 10,050 | Rake 0 
+Board [8d Ts 2c Jc 4c]
+Seat 1: OKQTI2 folded before Flop 
+Seat 2: Hero (button) showed [Ac 9c] and won (10,050) with a flush, Ace high
+Seat 3: 0w4N3X (small blind) folded before Flop 
+Seat 6: mdGZJG (big blind) folded before Flop 
+Seat 7: hlI2Ee showed [5d 5c] and lost with a pair of Fives
+Seat 8: UeQtuN folded before Flop

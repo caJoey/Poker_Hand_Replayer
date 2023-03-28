@@ -9,13 +9,14 @@ function getValue(){
 // initializations
 let line = 0;
 let finalSeatLine = 2;
-let finalAnteLine = 0;
 let holeLine = 0;
-let showDownLine = 0;
 let arr = [];
 let arrTemp = [];
 let totalPot = 0;
 let rake = 0;
+let toggle = -1;
+let potUpdated = [0,0,0,0,0,0,0,0,0];
+let collectCount = 0;
 
 // if not null: 
 // 0-1: players name (string), players balance (float)
@@ -39,15 +40,15 @@ let pairs = {
 // 9: bal top
 // 10-11: bet top, bet left
 let locations = {
-    0: ["5%","42%","2%","42.5%","18%","52%","0%","42.3%","48%","10%","19%","43%"],// seat 1
-    1: ["8%","58%","6%","58.5%","20%","56%","3%","58.5%","64.2%","13%","21%","58%"],// seat 2
-    2: ["25%","72%","22.5%","72.5%","30%","70%","19%","72.5%","78.2%","30%","31.5%","65%"],// seat 3
-    3: ["52%","73%","50%","73.5%","52%","70%","46.5%","73.5%","79.2%","57%","45%","65%"],// seat 4
-    4: ["70%","60%","68%","60.5%","71%","57.5%","65%","60.5%","66.2%","75%","59%","55%"],// seat 5
-    5: ["70%","25%","68%","25.5%","71%","38%","65%","25.5%","31.2%","75%","58%","35%"],// seat 6
-    6: ["52%","11%","50%","11.5%","50%","24%","46.5%","11.5%","17.2%","57%","48%","26.5%"],// seat 7
-    7: ["25%","12%","23%","12.5%","38%","24%","20%","12.5%","18.2%","30%","29%","24.5%"],// seat 8
-    8: ["8%","25%","6%","25.5%","23%","35%","3%","25.5%","31.2%","13%","19%","28%"]// seat 9
+    0: ["5%","42%","5%","42.5%","18%","52%","0%","42.3%","48%","10%","19%","43%"],// seat 1
+    1: ["8%","58%","9%","58.5%","20%","56%","3%","58.5%","64.2%","13%","21%","58%"],// seat 2
+    2: ["25%","72%","25.5%","72.5%","30%","70%","19%","72.5%","78.2%","30%","31.5%","65%"],// seat 3
+    3: ["52%","73%","53%","73.5%","52%","70%","46.5%","73.5%","79.2%","57%","45%","65%"],// seat 4
+    4: ["70%","60%","71%","60.5%","71%","57.5%","65%","60.5%","66.2%","75%","59%","55%"],// seat 5
+    5: ["70%","25%","71%","25.5%","71%","38%","65%","25.5%","31.2%","75%","58%","35%"],// seat 6
+    6: ["52%","11%","53%","11.5%","50%","24%","46.5%","11.5%","17.2%","57%","48%","26.5%"],// seat 7
+    7: ["25%","12%","26%","12.5%","38%","24%","20%","12.5%","18.2%","30%","29%","24.5%"],// seat 8
+    8: ["8%","25%","9%","25.5%","23%","35%","3%","25.5%","31.2%","13%","19%","28%"]// seat 9
 }
 
 // turns hand history into an array separated by newlines
@@ -58,14 +59,6 @@ function setArr(){
         if(arrTemp[i].includes("***") && arrTemp[i].includes("SUMMARY")) break;
         arr.push(arrTemp[i].split(' '));
     }
-
-    findRake();
-    setFinalSeatLine();
-    finalAnteLine = finalSeatLine;
-    if(arr[finalSeatLine + 1][3] == "ante"){
-        finalAnteLine = finalSeatLine * 2 - 1;
-    }
-    right();
 
     // set attributes of box and name
     for(let i = 0; i < 9; i++){
@@ -126,23 +119,15 @@ function setArr(){
         document.getElementById(bet).style.top = percentages[10];
         document.getElementById(bet).style.left = percentages[11];
     }
-}
 
-// sets finalSeatLine to the final line for seating in arr
-function setFinalSeatLine(){
-    while(arr[finalSeatLine][0] == "Seat"){
-        finalSeatLine++;
-    }
-    finalSeatLine--;
-
-    while(arr[holeLine][1] != "HOLE"){
-        holeLine++;
-    }
-    holeLine++;
+    findRake();
+    setFinalSeatLine();
+    right();
 }
 
 // "next" button is clicked
 function right(){
+    // combines players winnings with their balance, not included in text
     if(line >= arr.length){
         for(let i = 0; i < 9; i++){
             if(document.getElementById("bet" + i).innerHTML.length > 0){
@@ -153,8 +138,8 @@ function right(){
             }
         }
     }
-
-    if(line <= 1){
+    // puts some info about the game on screen
+    else if(line <= 1){
         let s = "";
         let i = 0;
         while(arr[0][i] != "-"){
@@ -165,16 +150,19 @@ function right(){
         }
         document.getElementById("topLeft").innerHTML = s;
         i = 0;
+        // goes to first seat line
         while(arr[1][i] != "Seat"){
             i++;
         }
         i++;
+        // moves button to correct location
         s = arr[1][i].slice(1,arr[1][i].length);
         let btn = document.getElementById("btn");
         btn.style.top = locations[parseInt(s) - 1][4];
         btn.style.left = locations[parseInt(s) - 1][5];
         line = 2;
     }
+    // seats the players, reveals balances
     else if(line <= finalSeatLine){
         document.getElementById("btn").style.display = "block";
         line = 2;
@@ -214,7 +202,7 @@ function right(){
         document.getElementById("bet" + numValue).innerHTML = removeComma(arr[line][4]);
         line++;
     }
-    // hole cards
+    // reveals hole cards, shows hero's hole cards
     else if(line <= holeLine){
         line = holeLine;
         let firstCard = arr[line][3].slice(1,arr[line][3].length);
@@ -229,65 +217,22 @@ function right(){
             document.getElementById("card" + i + 0).style.display = "block";
             document.getElementById("card" + i + 1).style.display = "block";
         }
-        let tempLine = line;
-        // sets finalHoleCardsLine to flop line (*** FLOP ***)
-        while(arr[tempLine][1] != "SHOW"){
-            tempLine++;
-            showDownLine = tempLine;
-        }
         line++;
     }
 
-    // (*** FLOP ***), collects bets, does flop
-    else if(arr[line][1] == "FLOP"){
-        collectBets();
-        let threeArr = [arr[line][3].slice(1),
-        arr[line][4],
-        arr[line][5].slice(0, arr[line][5].length - 1)];
-        for(let i = 0; i < 3; i++){
-            document.getElementById("flop" + i).src = "../images/cards/" + threeArr[i] + ".jpg";
-            document.getElementById("flop" + i).style.display = "block";
-        }
-        line++;
-    }
-
-    // (*** TURN ***)
-    else if(arr[line][1] == "TURN"){
-        collectBets();
-        let turnCard = arr[line][6].slice(1,arr[line][6].length - 1);
-        document.getElementById("turn").src = "../images/cards/" + turnCard + ".jpg";
-        document.getElementById("turn").style.display = "block";
-        line++;
-    }
-
-    // (*** RIVER ***)
-    else if(arr[line][1] == "RIVER"){
-        collectBets();
-        let riverCard = arr[line][7].slice(1,arr[line][7].length - 1);
-        document.getElementById("river").src = "../images/cards/" + riverCard + ".jpg";
-        document.getElementById("river").style.display = "block";
-        line++;
-    }
-
-    // (*** SHOW DOWN ***)
-    else if(arr[line][1] == "SHOW"){
-        collectBets();
-        line++;
-        right();
-        return;
-    }
-
-    // from second line of hole cards to line before (*** SHOW DOWN ***)
-    else if(line < showDownLine){
+    // from second line of hole cards to end
+    else if(line < arr.length){
         let identifier = arr[line][1];
-        let name = arr[line][0].slice(0, arr[line][0].length - 1);
+        let name = arr[line][0].replace(':', '');
         let num = getPlayerNumValue(name);
-        if(identifier == "folds"){
+        // player folds, remove them, make the box gray
+        if(identifier == "folds" || identifier == "mucks"){
             document.getElementById("box" + num).style.backgroundColor = "gray";
             document.getElementById("card" + num + 0).style.display = "none";
             document.getElementById("card" + num + 1).style.display = "none";
         }
-        if(identifier == "raises" || identifier == "bets"){
+        // player raises or bets, change color to red and put out bet 
+        else if(identifier == "raises" || identifier == "bets"){
             document.getElementById("box" + num).style.backgroundColor = "lightcoral";
             let raiseAmount = parseFloat(removeComma(arr[line][2]));
             totalPot += raiseAmount;
@@ -300,7 +245,7 @@ function right(){
             }
         }
         // calls (difference between the opponents bet and their current bet)
-        if(identifier == "calls"){
+        else if(identifier == "calls"){
             document.getElementById("box" + num).style.backgroundColor = "lightsalmon";
             let callAmount = parseFloat(removeComma(arr[line][2]));
             totalPot += callAmount
@@ -313,13 +258,14 @@ function right(){
             document.getElementById("bet" + num).innerHTML = totalAdd.toString();
         }
         // checks, just changes box color
-        if(identifier == "checks"){
+        else if(identifier == "checks"){
             document.getElementById("box" + num).style.backgroundColor = "lightgreen";
         }
         // uncalled bet returned
-        if(identifier == "bet"){
+        else if(identifier == "bet"){
             name = arr[line][5];
             num = getPlayerNumValue(name);
+            document.getElementById("bet" + num).innerHTML = "";
             let betReverse = 0 - parseFloat(removeComma(arr[line][2].slice(1, arr[line][2].length - 1)));
             updateBalance(betReverse, num);
 
@@ -331,29 +277,53 @@ function right(){
             right();
             return;
         }
-        line++;
-    }
-    // from line after (*** SHOW DOWN ***) to final line
-    else if(line <= arr.length - 1){
-        let player = arr[line][0].replace(':', '');
-        let playerNum = getPlayerNumValue(player);
-        if(arr[line][1] == "shows"){
+        // if player shows, reveal their cards
+        else if(identifier == "shows"){
             let firstShow = arr[line][2].slice(1, arr[line][2].length);
             let secondShow = arr[line][3].slice(0, arr[line][3].length - 1);
-            document.getElementById("card" + playerNum + 0).src = "../images/cards/" + firstShow + ".jpg";
-            document.getElementById("card" + playerNum + 1).src = "../images/cards/" + secondShow + ".jpg";
+            document.getElementById("card" + num + 0).src = "../images/cards/" + firstShow + ".jpg";
+            document.getElementById("card" + num + 1).src = "../images/cards/" + secondShow + ".jpg";
         }
-        else if(arr[line][1] == "mucks"){
-            document.getElementById("box" + playerNum).style.backgroundColor = "gray";
-            document.getElementById("card" + playerNum + 0).style.display = "none";
-            document.getElementById("card" + playerNum + 1).style.display = "none";
-        }
-        else if(arr[line][1] == "collected"){
-            let potUpdated = arr[line][2];
-            document.getElementById("bet" + playerNum).innerHTML = removeComma(potUpdated);
+        // collects their winnings, move winnings to bet location
+        else if(identifier == "collected"){
+            potUpdated[num] += parseFloat(removeComma(arr[line][2]));
+            document.getElementById("bet" + num).innerHTML = potUpdated[num].toString();
             document.getElementById("rake").innerHTML = "Rake: " + rake.toString();
             document.getElementById("rake").style.display = "block";
         }
+        // (*** SHOW DOWN ***)
+        else if(identifier == "SHOW"){
+            collectBets();
+            line++;
+            right();
+            return;
+        }
+        // (*** RIVER ***)
+        else if(identifier == "RIVER"){
+            collectBets();
+            let riverCard = arr[line][7].slice(1,arr[line][7].length - 1);
+            document.getElementById("river").src = "../images/cards/" + riverCard + ".jpg";
+            document.getElementById("river").style.display = "block";
+        }
+        // (*** TURN ***)
+        else if(identifier == "TURN"){
+            collectBets();
+            let turnCard = arr[line][6].slice(1,arr[line][6].length - 1);
+            document.getElementById("turn").src = "../images/cards/" + turnCard + ".jpg";
+            document.getElementById("turn").style.display = "block";
+        }
+        // (*** FLOP ***), collects bets, does flop
+        else if(identifier == "FLOP"){
+            collectBets();
+            let threeArr = [arr[line][3].slice(1),
+            arr[line][4],
+            arr[line][5].slice(0, arr[line][5].length - 1)];
+            for(let i = 0; i < 3; i++){
+                document.getElementById("flop" + i).src = "../images/cards/" + threeArr[i] + ".jpg";
+                document.getElementById("flop" + i).style.display = "block";
+            }
+        }   
+        // sometimes non important text is there, this speeds it up
         else{
             line++;
             right();
@@ -375,6 +345,20 @@ function getPlayerNumValue(playerName){
     }
 }
 
+// sets finalSeatLine to the final line for seating in arr
+function setFinalSeatLine(){
+    while(arr[finalSeatLine][0] == "Seat"){
+        finalSeatLine++;
+    }
+    finalSeatLine--;
+
+    // sets holeLine
+    while(arr[holeLine][1] != "HOLE"){
+        holeLine++;
+    }
+    holeLine++;
+}
+
 // updates player's balance given the bet size (float) and their player number (int)
 function updateBalance(betSize, playerNumValue){
     betSize = betSize.toFixed(2);
@@ -393,10 +377,11 @@ function removeComma(s){
     return returnString;
 }
 // hides all bets, reveals new totalPot value
-// also resets colors of non-folded hands to light blue
+// also resets colors of non-folded hands to light blue (default)
 function collectBets(){
     document.getElementById("pot").style.display = "block";
     document.getElementById("pot").innerHTML = "Total Pot: " +
+    // rounds to 2 digits
     (Math.round((totalPot + Number.EPSILON) * 100) / 100).toString();
     for(let i = 0; i < 9; i++){
         document.getElementById("bet" + i).innerHTML = "";
@@ -411,13 +396,50 @@ function findRake(){
     for(let i = 0; i < arrTemp.length; i++){
         if(arrTemp[i].includes("Rake")){
             let rakeArr = arrTemp[i].split(' ');
-            rake = parseFloat(rakeArr[5]);
+            for(let i = 0; i < rakeArr.length; i++){
+                if(rakeArr[i] == "Rake"){
+                    rake = parseFloat(rakeArr[i + 1]);
+                    break;
+                }
+            }
             return;
         }
     }
 }
 
-// prev button pushed
+// sleeps for (ms) milliseconds
+// source: https://stackoverflow.com/questions/951021/what-is-the-javascript-version-of-sleep
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+// reset button pushed
+function reset(){
+    location.reload();
+}
+
+// play/pause button pushed
 function left(){
-    alert("under construction");
+    toggle *= -1;
+    // toggle off
+    if(toggle < 0){
+        document.getElementById("pauseChamp").innerHTML = "Play";
+    }
+    // toggle on
+    else{
+        document.getElementById("pauseChamp").innerHTML = "Pause";
+        go();
+    }
+}
+
+// runs until toggle is toggled off or reaches end
+async function go(){
+    while(line <= arr.length && toggle > 0){
+        // split these up to make it teleport less if button is spammed
+        await sleep(625);
+        if(line <= arr.length && toggle > 0){
+            right();
+        }
+        await sleep(625);
+    }
 }

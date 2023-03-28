@@ -1,7 +1,44 @@
-.divge {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 90vh;
+  html, body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden
   }
+  
+  h1{
+    font-size: 250%;
+    text-align: center;
+    margin-top: 10%;
+  }
+
+  #hand_data{
+    position: fixed;
+    top: 38%;
+    left: 35%;
+    resize: none;
+  }
+
+  #btn{
+    position: fixed;
+    top: 58%;
+    left: 45%;
+    height: 8%;
+    width: 8%;
+    font-size: 120%;
+    cursor: pointer;
+  }
+
+  #git_btn{
+    position: fixed;
+    top: 82%;
+    left: 91%;
+    height: 16%;
+    width: 8%;
+    background-image: url(images/github-mark.png);
+    background-position: 50% 50%;
+    background-size: 75%;
+    background-repeat: no-repeat;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+  }
+  
