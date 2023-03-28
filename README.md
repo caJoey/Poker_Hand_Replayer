@@ -25,4 +25,4 @@ Note: If you just want to test the program, there are 7 sample hands in examples
 This is written in basic HTML, CSS, and JavaScript. There are comments throughout that describe how the code is written to help those who want to rework or edit it.
 
 ## Questions
-If you have any questions, concerns, or requests relating to the program feel free to create an issue and I will respond
+If you have any questions, concerns, or requests relating to the program feel free to create an issue and I will respond.
