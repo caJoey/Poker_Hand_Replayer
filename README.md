@@ -10,6 +10,7 @@ This is a website that accepts a Texas Hold'Em poker hand history in text format
 ## Get Started 
  1. Go to the website link or clone the repository and open index.html in your browser
  2. Enter a single hand history in the box, and press the submit button
+<br />
  Note: If you just want to test the program, there are 7 sample hands in examples.txt. These are separated by 5 white spaces, and may be copied into the text box and run.
  3. Press the "next" or "play" button to start stepping through your hand
  4. To replay a new hand press the back arrow, this will bring you back to the home page
