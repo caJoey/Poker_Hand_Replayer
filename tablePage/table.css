@@ -24,6 +24,12 @@
   	border-radius: 110%;
   }
 
+  .bet{
+	color: #FFF;
+	font-weight: bold;
+	text-shadow: #000 0 0 5px;
+  }
+
   .box{
     border: 3px solid #000;
 	border-radius: 5px;
@@ -76,7 +82,6 @@
   }
 
   #btn{
-    height: 4%;
     width: 2%;
     position: fixed;
     display: none;
