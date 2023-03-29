@@ -74,13 +74,12 @@ function setArr(){
         document.getElementById(boxShort).style.display = "none"; // block
         document.getElementById(boxShort).style.backgroundColor = "lightblue";
         document.getElementById(boxShort).style.width = "12%";
-        document.getElementById(boxShort).style.height = "12%";
+        //document.getElementById(boxShort).style.height = "12%";
         document.getElementById(boxShort).style.position = "fixed";
         document.getElementById(boxShort).style.top = percentages[0];
         document.getElementById(boxShort).style.left = percentages[1];
 
         // name
-
         document.getElementById(nameShort).style.fontSize = "120%";
         document.getElementById(nameShort).style.color = "black";
 		/*
