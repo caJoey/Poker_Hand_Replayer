@@ -5,17 +5,31 @@
   }
 
   body{
-    background-color: gray;
+    background: #2D3436;
   }
 
-  .divge {
+  .divge{
     position: fixed;
     left: 13%;
     top: 10%;
     height: 110%;
     width: 110%;
   }
-  
+  .divge .tablege{
+    background: radial-gradient(#000, #333);
+	border: 20px solid #000;
+	margin: -20px 0 0 -20px;
+	width: 65%;
+	height: 65%;
+  	border-radius: 110%;
+  }
+
+  .box{
+    border: 3px solid #000;
+	border-radius: 5px;
+	text-align: center;
+  }
+
   .btn1{
     position: fixed;
     text-align: right;
@@ -47,10 +61,16 @@
     cursor: pointer;
   }
 
+  .card{
+    border-radius: 5px;
+	border: 3px solid #FFF;
+	box-shadow: #000 0 0 3px;
+  }
+
   #topLeft{
     font-size: 150%;
     position: fixed;
-    color: black;
+    color: #FFF;
     left: 1%;
     bottom: -1%
   }
@@ -137,7 +157,7 @@
   #key0{
     color: lightgreen;
   }
-  
+
   #key1{
     color: lightsalmon;
   }
@@ -145,4 +165,3 @@
   #key2{
     color: lightcoral;
   }
-  

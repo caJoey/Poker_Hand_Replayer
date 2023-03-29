@@ -1,5 +1,5 @@
 <html lang="en">
- 
+
 <html>
     <head>
         <meta charset="utf-8" />
@@ -14,7 +14,7 @@
         <p id="topLeft"></p>
 
         <div class="divge">
-            <img src="../images/oval.png" height="65%" width="65%">
+            <div class="tablege"></div>
         </div>
 
         <div class="btn1">
@@ -28,52 +28,42 @@
             <button type="button" onclick="reset()">Reset</button>
         </div>
 
-        <img src="../images/cards/back.jpg" id="card00">
-        <img src="../images/cards/back.jpg" id="card01">
-        <img src="../images/cards/back.jpg" id="card10">
-        <img src="../images/cards/back.jpg" id="card11">
-        <img src="../images/cards/back.jpg" id="card20">
-        <img src="../images/cards/back.jpg" id="card21">
-        <img src="../images/cards/back.jpg" id="card30">
-        <img src="../images/cards/back.jpg" id="card31">
-        <img src="../images/cards/back.jpg" id="card40">
-        <img src="../images/cards/back.jpg" id="card41">
-        <img src="../images/cards/back.jpg" id="card50">
-        <img src="../images/cards/back.jpg" id="card51">
-        <img src="../images/cards/back.jpg" id="card60">
-        <img src="../images/cards/back.jpg" id="card61">
-        <img src="../images/cards/back.jpg" id="card70">
-        <img src="../images/cards/back.jpg" id="card71">
-        <img src="../images/cards/back.jpg" id="card80">
-        <img src="../images/cards/back.jpg" id="card81">
+        <img class="card" src="../images/cards/back.jpg" id="card00">
+        <img class="card" src="../images/cards/back.jpg" id="card01">
+        <img class="card" src="../images/cards/back.jpg" id="card10">
+        <img class="card" src="../images/cards/back.jpg" id="card11">
+        <img class="card" src="../images/cards/back.jpg" id="card20">
+        <img class="card" src="../images/cards/back.jpg" id="card21">
+        <img class="card" src="../images/cards/back.jpg" id="card30">
+        <img class="card" src="../images/cards/back.jpg" id="card31">
+        <img class="card" src="../images/cards/back.jpg" id="card40">
+        <img class="card" src="../images/cards/back.jpg" id="card41">
+        <img class="card" src="../images/cards/back.jpg" id="card50">
+        <img class="card" src="../images/cards/back.jpg" id="card51">
+        <img class="card" src="../images/cards/back.jpg" id="card60">
+        <img class="card" src="../images/cards/back.jpg" id="card61">
+        <img class="card" src="../images/cards/back.jpg" id="card70">
+        <img class="card" src="../images/cards/back.jpg" id="card71">
+        <img class="card" src="../images/cards/back.jpg" id="card80">
+        <img class="card" src="../images/cards/back.jpg" id="card81">
 
-        <div id="box0"></div>
-        <div id="box1"></div>
-        <div id="box2"></div>
-        <div id="box3"></div>
-        <div id="box4"></div>
-        <div id="box5"></div>
-        <div id="box6"></div>
-        <div id="box7"></div>
-        <div id="box8"></div>
-
-        <p id="name0"></p>
-        <p id="name1"></p>
-        <p id="name2"></p>
-        <p id="name3"></p>
-        <p id="name4"></p>
-        <p id="name5"></p>
-        <p id="name6"></p>
-        <p id="name7"></p>
-        <p id="name8"></p>
+        <div class="box" id="box0"><p id="name0"></p><p id="bal0"></p></div>
+        <div class="box" id="box1"><p id="name1"></p><p id="bal1"></p></div>
+        <div class="box" id="box2"><p id="name2"></p><p id="bal2"></p></div>
+        <div class="box" id="box3"><p id="name3"></p><p id="bal3"></p></div>
+        <div class="box" id="box4"><p id="name4"></p><p id="bal4"></p></div>
+        <div class="box" id="box5"><p id="name5"></p><p id="bal5"></p></div>
+        <div class="box" id="box6"><p id="name6"></p><p id="bal6"></p></div>
+        <div class="box" id="box7"><p id="name7"></p><p id="bal7"></p></div>
+        <div class="box" id="box8"><p id="name8"></p><p id="bal8"></p></div>
 
         <img src="../images/button.png" id="btn">
 
-        <img src="../images/cards/back.jpg" id="flop0">
-        <img src="../images/cards/back.jpg" id="flop1">
-        <img src="../images/cards/back.jpg" id="flop2">
-        <img src="../images/cards/back.jpg" id="turn">
-        <img src="../images/cards/back.jpg" id="river">
+        <img class="card" src="../images/cards/back.jpg" id="flop0">
+        <img class="card" src="../images/cards/back.jpg" id="flop1">
+        <img class="card" src="../images/cards/back.jpg" id="flop2">
+        <img class="card" src="../images/cards/back.jpg" id="turn">
+        <img class="card" src="../images/cards/back.jpg" id="river">
 
         <p id="bet0"></p>
         <p id="bet1"></p>
@@ -85,22 +75,12 @@
         <p id="bet7"></p>
         <p id="bet8"></p>
 
-        <p id="bal0"></p>
-        <p id="bal1"></p>
-        <p id="bal2"></p>
-        <p id="bal3"></p>
-        <p id="bal4"></p>
-        <p id="bal5"></p>
-        <p id="bal6"></p>
-        <p id="bal7"></p>
-        <p id="bal8"></p>
-
         <div id="keys">
-            <p id="key0">⬤: check</p>
-            <p id="key1">⬤: call</p>
-            <p id="key2">⬤: bet / raise</p>
+            <p id="key0">⬤ check</p>
+            <p id="key1">⬤ call</p>
+            <p id="key2">⬤ bet / raise</p>
         </div>
-        
+
         <p id="pot"></p>
         <p id="rake"></p>
     </body>
