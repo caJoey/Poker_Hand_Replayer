@@ -1,4 +1,4 @@
-// first page function, transfers hand data to second page 
+// first page function, transfers hand data to second page
 // via sessionStorage, changes window to second page
 function getValue(){
     let hand = document.getElementById("hand_data").value;
@@ -18,7 +18,7 @@ let toggle = -1;
 let potUpdated = [0,0,0,0,0,0,0,0,0];
 let collectCount = 0;
 
-// if not null: 
+// if not null:
 // 0-1: players name (string), players balance (float)
 let pairs = {
     0:null,
@@ -75,19 +75,19 @@ function setArr(){
         document.getElementById(boxShort).style.backgroundColor = "lightblue";
         document.getElementById(boxShort).style.width = "12%";
         document.getElementById(boxShort).style.height = "12%";
-        document.getElementById(boxShort).style.borderStyle = "solid";
-        document.getElementById(boxShort).style.borderWidth = "large";
-        document.getElementById(boxShort).style.borderColor = "black";
         document.getElementById(boxShort).style.position = "fixed";
         document.getElementById(boxShort).style.top = percentages[0];
         document.getElementById(boxShort).style.left = percentages[1];
 
         // name
+
         document.getElementById(nameShort).style.fontSize = "120%";
-        document.getElementById(nameShort).style.position = "fixed";
         document.getElementById(nameShort).style.color = "black";
+		/*
+        document.getElementById(nameShort).style.position = "fixed";
         document.getElementById(nameShort).style.top = percentages[2];
         document.getElementById(nameShort).style.left = percentages[3];
+		*/
 
         // left card
         document.getElementById(cardLeft).style.display = "none";
@@ -108,9 +108,11 @@ function setArr(){
         // balance of player
         document.getElementById(bal).style.display = "none";
         document.getElementById(bal).style.fontSize = "150%";
+		/*
         document.getElementById(bal).style.position = "fixed";
         document.getElementById(bal).style.top = percentages[9];
         document.getElementById(bal).style.left = percentages[3];
+		*/
 
         // bet location
         document.getElementById(bet).style.color = "white";
@@ -179,7 +181,7 @@ function right(){
 
             // block appears
             document.getElementById("box" + num).style.display = "block";
-            
+
             // adds balance to pairs hashtable
             pairs[num].push(removeComma(bal));
 
@@ -231,7 +233,7 @@ function right(){
             document.getElementById("card" + num + 0).style.display = "none";
             document.getElementById("card" + num + 1).style.display = "none";
         }
-        // player raises or bets, change color to red and put out bet 
+        // player raises or bets, change color to red and put out bet
         else if(identifier == "raises" || identifier == "bets"){
             document.getElementById("box" + num).style.backgroundColor = "lightcoral";
             let raiseAmount = parseFloat(removeComma(arr[line][2]));
@@ -322,7 +324,7 @@ function right(){
                 document.getElementById("flop" + i).src = "../images/cards/" + threeArr[i] + ".jpg";
                 document.getElementById("flop" + i).style.display = "block";
             }
-        }   
+        }
         // sometimes non important text is there, this speeds it up
         else{
             line++;
